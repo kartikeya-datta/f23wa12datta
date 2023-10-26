@@ -3,7 +3,6 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('computation', { title1: `Kartikeya's Bonus` });
     router.put( x = Math.round(Math.random()*10));
     router.put( y = Math.round(Math.random()*10));
     router.put( z = Math.round(Math.random()));
