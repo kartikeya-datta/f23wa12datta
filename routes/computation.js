@@ -3,20 +3,21 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    // Generate the content you want to send as a response
-    const x = Math.round(Math.random() * 10);
-    const y = Math.round(Math.random() * 10);
-    const z = Math.round(Math.random());
-    const p = Math.pow(x, y);
-    const s = Math.sign(x);
-    const ta = Math.tanh(z);
-    const tr = Math.trunc(y);
-
-    const responseText = `power applied to ${x} and ${y} is ${p}\n sign applied to ${x} is ${s}\n tanh applied to ${z} is ${ta}\n trunc applied to ${y} is ${tr}`;
-
-    // Send the response to the client
-    res.render('computation', { title1: 'My Math functions', result: responseText });
+    router.put( x = Math.round(Math.random()*10));
+    router.put( y = Math.round(Math.random()*10));
+    router.put( z = Math.round(Math.random()));
+    router.post(p = Math.pow(x, y));
+    router.post(s = Math.sign(x));
+    router.post(ta = Math.tanh(z));
+    router.post(tr = Math.trunc(y));
+  res.send(`power applied to ${x} and ${y} is ${p}\n sign applied to ${x} is ${s}\n tanh applied to ${z} is ${ta}\n trunc applied to ${y} is ${tr}`)
 });
 
-
 module.exports = router;
+let x;
+let y;
+let z;
+let p;
+let s;
+let ta;
+let tr;
