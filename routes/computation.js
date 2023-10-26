@@ -10,7 +10,6 @@ router.get('/', function(req, res, next) {
     router.post(s = Math.sign(x));
     router.post(tanh(x/10));
     router.post(trunc(y));
-  res.render('index', { title: 'Express' });
   res.send(`power applied to ${x} and ${y} is ${p}\n sign applied to ${x} is ${s}\n tanh applied to ${x/10} is ${ta}\n trunc applied to ${y} is ${tr}`)
 });
 
