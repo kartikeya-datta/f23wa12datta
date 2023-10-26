@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
     router.post(s = Math.sign(x)); 
     router.post(ta = Math.tanh(z));
     router.post(tr = Math.trunc(y));
-    res.send(`power applied to ${x} and ${y} is ${p}`+\n+`sign applied to ${x} is ${s}`+\n+`tanh applied to ${z} is ${ta}`+\n+`trunc applied to ${y} is ${tr}`)
+    res.send(`power applied to ${x} and ${y} is ${p}\nsign applied to ${x} is ${s}\ntanh applied to ${z} is ${ta}\ntrunc applied to ${y} is ${tr}`);
 });
 
 module.exports = router;
