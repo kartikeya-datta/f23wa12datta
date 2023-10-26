@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
     router.put( y = Math.round(Math.random()*10));
     router.post(p = Math.pow(x, y));
     router.post(s = Math.sign(x));
-    router.post(tanh(x/10));
-    router.post(trunc(y));
+    router.post(ta = tanh(x/10));
+    router.post(tr = trunc(y));
   res.send(`power applied to ${x} and ${y} is ${p}\n sign applied to ${x} is ${s}\n tanh applied to ${x/10} is ${ta}\n trunc applied to ${y} is ${tr}`)
 });
 
